@@ -11,7 +11,8 @@ A small UIKit app to browse movies using TMDB API. Built with Clean Architecture
 - SDWebImage
 - Alamofire
 - Dependency Injection
-- Dark Mode supported.
+- Unit Testing
+- Dark Mode supported
 
 ## 🏗️ Architecture
 - Presentation: UIKit + ViewModels
