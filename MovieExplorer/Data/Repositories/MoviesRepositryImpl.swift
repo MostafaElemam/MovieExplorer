@@ -7,7 +7,12 @@
 
 import Foundation
 
-class MoviesRepositry {
+protocol MoviesRepositry {
+    func getMovies() async -> [Movie]?
+    func getMovie(_ id: Int) async -> Movie?
+}
+
+class MoviesRepositryImpl: MoviesRepositry {
     
     private let moviesService: MoviesService
     init(moviesService: MoviesService = MoviesService()) {
