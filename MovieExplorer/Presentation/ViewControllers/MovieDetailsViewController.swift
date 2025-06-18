@@ -22,7 +22,7 @@ class MovieDetailsViewController: UIViewController {
     
     // MARK: - Properties
     var movie: Movie!
-    private let viewModel = MoviesViewModel(useCase: MoviesUseCase())
+    private let viewModel = MovieDetailsViewModel(useCase: MovieDetailsUseCase())
     private var isLoading = true
     var didUpdateMovie: (() -> ())?
     

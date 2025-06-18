@@ -12,7 +12,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
-    private let viewModel = MoviesViewModel(useCase: MoviesUseCase())
+    private let viewModel = MoviesViewModel(useCase: MoviesListUseCase())
     private var isLoading = true
     var movies: [Movie]?
     var selectedMovie: Movie!

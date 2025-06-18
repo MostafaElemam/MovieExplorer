@@ -30,4 +30,7 @@ class FavouriteMovieManager {
             favouriteMovies.insert(id)
         }
     }
+    func isFavourite(id: Int) -> Bool {
+        favouriteMovies.contains(id)
+    }
 }

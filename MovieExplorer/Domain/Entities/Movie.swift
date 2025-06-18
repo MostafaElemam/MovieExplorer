@@ -25,7 +25,7 @@ struct Movie: Codable {
     let budget: Int?
     let revenue: Int?
     var isFavourite: Bool {
-        FavouriteMovieManager.shared.favouriteMovies.contains(id)
+        FavouriteMovieManager.shared.isFavourite(id: id)
     }
     
     struct Country: Codable {
